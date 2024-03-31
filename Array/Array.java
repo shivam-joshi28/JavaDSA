@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Array is collection of  items of same data type at contigous memory location
+// Array is collection of  items of same data type at contigious memory location
 
 public class Array
 {   
