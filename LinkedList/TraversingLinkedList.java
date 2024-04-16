@@ -28,15 +28,6 @@ public class TraversingLinkedList {
     }
 
     //sending head node as reference to the function printList
-public static void printList(Node head){
-    //created current node and assign head to it
-    Node current = head;
-    //traversing the LL through while loop untill current becomes null and updating current 
-    while(current!= null)
-    {
-        System.out.print(current.data + " ");
-        current = current.next;
-    }
-}
+ 
 }
 

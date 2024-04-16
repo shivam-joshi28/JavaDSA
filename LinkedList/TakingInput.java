@@ -24,7 +24,7 @@ public class TakingInput
      }
     public static void print(Node head)
     {
-        Node current = head;
+        Node current = head;       
         while(current!= null)
         {
             System.out.print(current.data+ "-->");

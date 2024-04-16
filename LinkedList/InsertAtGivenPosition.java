@@ -24,7 +24,7 @@ public class InsertAtGivenPosition
             nodeToBeInserted.next = head;
             head = nodeToBeInserted;
             return nodeToBeInserted;
-        }
+        } 
         else
         {
              int count = 0;
