@@ -17,6 +17,7 @@ public class InsertAtGivenPosition
 
     public static Node insert(Node head, int element,int position)
     {
+        
         Node nodeToBeInserted = new Node(element);
 
         if(position == 0)
@@ -28,7 +29,7 @@ public class InsertAtGivenPosition
         else
         {
              int count = 0;
-             Node previous = head;
+             Node previous = head;                                // 2->3->6->null
              while(count < position-1 && previous!= null)
              {
                count++;
@@ -46,6 +47,7 @@ public class InsertAtGivenPosition
 
     public static Node takingInput() 
 {
+    System.out.print("Enter elements of array and to end list pls write -1 :");
     Scanner s = new Scanner(System.in);
     int data = s.nextInt();
 
@@ -74,14 +76,19 @@ public static void printList(Node head){
     while(current!= null)
     {
         System.out.print(current.data + " ");
-        current = current.next;
+        current = current.next;       
     }
 }
 
     public static void main(String args[]){
 
         Node head = takingInput();
-       head =  insert(head, 80, 0);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter element to be inserted: ");
+        int element = sc.nextInt();
+        System.out.print("Enter a position: ");
+        int position = sc.nextInt();
+       head =  insert(head, element, position);
         printList(head);
 
     }
